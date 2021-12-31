@@ -1,0 +1,776 @@
+#step 1 :  DEFINING MODULES
+
+from integer_operations import *
+from string_operations import *
+from list_creation import *
+from tuple_operations import *
+from set_operations import *
+from dictionairy_operations import *
+            
+
+
+
+
+
+print('''
+Welcome to Calculator
+
+Please select any one data strucuture to proceed 
+1) Int
+2) String
+3) List
+4) tuple
+5) set
+6) Dictionary
+''')
+
+user_input = int(input("Please enter a value between 1 - 6: "))
+
+
+if user_input == 1:
+    print("""please select any one operation
+    1. add
+    2. sub
+    3. power
+    4. multi
+    5. division
+    6. floor division
+    7. remainder calculation
+    8. palindrome or not
+    9. odd or even check
+    10.fibanocci check
+    11.positive negative check
+    12.factorial check
+    13.amstrong number
+    14.sum of digits
+    15.product of digits
+    16.prime number check
+    
+    """)
+    int_user_input = int(input("please select any one  nnumbe r 1-15"))
+
+
+
+    if int_user_input == 1:
+        try:
+            value1 = int(input("Please enter number 1: "))
+            value2 = int(input("please enter number 2: "))
+            print("The addition value is", add_function(value1,value2))
+        except:
+             print("Any error during please end the operation")
+    elif int_user_input == 2:
+        try:
+            value1 = int(input("Please enter number 1: "))
+            value2 = int(input("please enter number 2: "))
+            print("The mutliply value is ", multiply(value1,value2))
+        except:
+            print("please enter the valid operation")
+    
+    elif int_user_input == 3:
+        try:
+           value1 = int(input("Please enter number 1: "))
+           value2 = int(input("please enter number 2: "))
+           print("The subract value is ",sub_function(value1,value2))
+        except:
+            print("operation fails please select the valid operation")
+        
+    elif int_user_input == 4:
+        try:
+            value1 = int(input("Please enter number 1: "))
+            value2 = int(input("please enter number 2: "))
+            print("The power value is ",pow_function(value1,value2))
+        except:
+            print("operation fails please select the valid operation")
+
+    elif int_user_input == 5:
+        try:
+            value1 = int(input("Please enter number 1: "))
+            value2 = int(input("please enter number 2: "))
+            print("The division value is ",div_calculation(value1,value2))
+            
+        except:
+             print("please enter the valid operation")
+
+    elif int_user_input == 6:
+        
+        try:
+            value1 = int(input("Please enter number 1: "))
+            value2 = int(input("please enter number 2: "))
+            print("The floor division value is ",floor_calculation(value1,value2))
+            
+        except:
+            print("user input is wrong please enter the valid input")
+
+    elif int_user_input == 7:
+        
+        try:
+            value1 = int(input("Please enter number 1: "))
+            value2 = int(input("please enter number 2: "))
+            print("The remainder value is ",rem_calculation(value1,value2))
+            
+        except:
+            print("user input is wrong please enter the valid input")
+
+
+    elif int_user_input == 8:
+        try:
+           value1 = input("Please enter string : ")     
+           print(palindrome_check(value1))
+
+        except:
+            print("user input is wrong please enter the valid input")
+
+
+    elif int_user_input == 9:
+        try:
+            value1 = int(input("Please enter number : "))     
+            print(odd_check(value1))
+        except:
+            print("user input is wrong please enter the valid input")
+
+    
+    elif int_user_input == 10:
+        try:
+            value1 = int(input("Please enter number : "))     
+            print(Fibonacci_num(value1))
+        except:
+            print("please enter the valid input")
+
+
+    elif int_user_input == 11:
+        
+        try:
+           value1 = int(input("Please enter number : "))     
+           positive_check(value1)
+
+        except:
+            print("user please select the valid number")
+        
+
+    elif int_user_input == 12:
+        
+        try:
+            value1 = int(input("Please enter number : "))     
+            print(factorial_check(value1))
+        except:
+            print("user input is wrong please enter the valid input or show the error")
+
+
+    elif int_user_input == 13:
+        try:
+            value1 = int(input("Please enter number : ")) 
+            amstrong_check(value1)
+            
+        except:
+            print("user input is wrong please enter the valid input")
+
+
+    elif int_user_input == 14:
+        try:
+            value1 = int(input("Please enter number : "))     
+            sum1_check(value1)
+
+        except:
+            print("user input is wrong please enter the valid input")
+
+        
+    elif int_user_input == 15:
+        try:
+            value1 = int(input("Please enter number : "))     
+            product_check(value1)
+
+        except:
+            print("please enter the valid input")
+
+
+
+if user_input == 2:
+    print("""please select any one operation
+    1. concanation
+    2. palindrome check
+    3. length check
+    4. captilize function
+    5. upper check
+    6. lowercheck
+    7. title check
+    8. starswith
+    9. endswith
+    10. replace
+    11. count
+    12. numeric
+    13. split
+    14. find
+    15.index
+    16. remove special characters
+    17. strip
+
+    
+    
+    """)
+    int_user_input = int(input("please select any one  nnumbe r 1-17"))
+
+    if int_user_input == 1:
+        try:
+            value1 = input("enter the string : " )
+            value2 = input("enter the string : " )
+            print("The concanation  value is ",concanate_check(value1,value2))
+        except:
+            print("please enter the valid input")
+            
+        
+    elif int_user_input == 2:
+        try:
+            value1 = input("Please enter string : ")     
+            palin_check(value1)
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 3:
+        try:
+            value1 = input("Please enter string : ")     
+            print("The length value is ",length_check(value1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 4:
+        try:
+            value1 = input("Please enter string : ")     
+            print("The capitalize value is ",capital_check(value1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 5:
+        try:
+            value1 = input("Please enter string : ")     
+            print("The upper value is ",upper_check(value1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 6:
+        try:
+            value1 = input("Please enter string : ")     
+            print("The lower value is ",lower_check(value1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 7:
+        try:
+            value1 = input("Please enter string : ")     
+            print("The title value is ",title_check(value1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 8:
+        try:
+            value1 = input("Please enter string : ")     
+            print("The starswith value is ",star_check(value1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 9:
+        try:
+            value1 = input("Please enter string : ")     
+            print("The endswith value is ",end_check(value1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 10:
+        try:
+            value1 = input("Please enter string : ")
+            value2 = input("Please enter string : ")
+            print(replace_check(value1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input ==11:
+        try:
+            value1 = input("Please enter string : ")     
+            print(numberic_check(value1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 12:
+        try:
+            value1 = input("Please enter string : ")     
+            print(index_check(value1))
+        except:
+            print("please enter the valid input")
+
+
+    elif int_user_input == 13:
+        try:
+            value1 = input("Please enter string : ")     
+            print(split_check(value1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 14:
+        try:
+            value1 = input("Please enter string : ")     
+            print(find_check(value1))
+        except:
+            print("please enter the valid input")
+   
+    elif int_user_input == 15:
+        try:
+            value1 = input("Please enter string : ")     
+            print(strip_check(value1))
+        except:
+            print("please enter the valid input")
+
+    
+
+    
+if user_input == 3:
+    print("""please select any one operation
+    1. list creation
+    2. len
+    3. count
+    4. sum function
+    5. pop function
+    6. median function
+    7.mean function
+    8. remove function
+    9. insert function
+    10.sort
+    11. copy
+    12. reversed
+    13 .max and min
+    14. shallow copy
+    15. list conversion
+    16. concanation
+    17. remove duplicates from set
+    
+    """)
+    int_user_input = int(input("please select any one  number 1-18"))
+
+    if int_user_input == 1:
+        try:
+            print(list_check())
+        except:
+            print("please enter the valid input")
+    
+    elif int_user_input == 2:
+        try:
+           list1 = list_check()
+           print("The length of list is : " ,len_check(list1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 3:
+        try:
+            list1 = list_check()
+            print(" The count value is : " ,count_check())
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 4:
+        try:
+            list1 = list_check()
+            print(" The sum  value is : " ,sum_check(list1))
+        except:
+            print("please enter the valid input")
+
+    
+    elif int_user_input == 5:
+        try:
+            list1 = list_check()
+            print(pop_check(list1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 6:
+        try:
+            list1 = list_check()
+            print( "The median value is  : " ,median_check(list1))
+        except:
+            print("please enter the valid input")
+
+    
+    elif int_user_input == 7:
+        try:
+            list1 = list_check()
+            print( "The mean value is  : " ,mean_check(list1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 8:
+        try:
+            list1 = list_check()
+            print(remove_check(list1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 9:
+        try:
+            list1 = list_check()
+            print(insert_check(list1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 10:
+        try:
+            list1 = list_check()
+            print(sort_check(list1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 11:
+        try:
+            list1 = list_check()
+            print(copy_check(list1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 12:
+        try:
+            list1 = list_check()
+            list1.reverse()
+            print(list1)
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 13:
+        try:
+            list1 = list_check()
+            list2 = list_check()
+            print("The max  and min values are : " ,max_check(list1,list2))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 14:
+        try:
+            list1 = list_check()
+            print(shallow_copy(list1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 15:
+        try:
+            list1 = list_check()
+            print(list_conversion(list1))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 16:
+        try:
+            list1 = list_check()
+            list2 = list_check()
+            print("The concatenate values are : " ,concatenate_values(list1,list2))
+        except:
+            print("please enter the valid input")
+
+    elif int_user_input == 17:
+        try:
+            list1 = list_check()
+            print(" The duplicate  after removing is : " ,duplicate_removal(list(list1)))
+        except:
+            print("please enter the valid input")
+
+    
+    
+
+    
+    
+
+    
+    
+    
+if user_input == 4:
+    print("""please select any one operation
+    1. tuple creation
+    2. count
+    3. index
+    4. tuple conversion
+    5. concanate
+    
+    
+    """)
+    
+    int_user_input = int(input("please select any one  number 1-5"))
+
+    
+    if int_user_input == 1:
+       try:
+           print(tuple_check())
+
+       except:
+           print("enter the valid operation or fails")
+
+       else:
+           print("operation is sucessfully printed")
+
+    elif int_user_input == 2:
+        try:
+          tuple1 = tuple_check()
+          print(" The count value is : " ,count_check(tuple1))
+
+        except:
+            print("enter the user input correctly or fails")
+
+        else:
+            print("enter the values correctly and succesfully printed")
+
+    elif int_user_input == 3:
+        tuple1 = tuple_check()
+        print(" The index value is : " ,index_check(tuple1))
+
+    elif int_user_input == 4:
+        try:
+            print(tuple_conversion())
+
+        except:
+            print("enter the int value properly")
+
+        else:
+            print("enter the values correctly and succesfully printed")
+
+    elif int_user_input == 5:
+            tuple1 = tuple_check()
+            tuple2 = tuple_check()
+            print("The concatenate values are : " ,concatenate(tuple1,tuple2))
+
+    
+if user_input == 5:
+    print("""please select any one operation
+    1.set creation
+    2.add function
+    3.remove function
+    4.length function
+    5.clear function
+    6.pop function
+    7.isdisjoint function
+    8.difference function
+    9.update function
+    10.subset function
+    11.issuperset function
+    12. intersection function
+    13. symmetric funtion
+    14. symmetric_difference_creation
+    15. union function
+    16.set to tuple
+    17.set to list
+    
+    
+    """)
+
+    int_user_input = int(input("please select any one  number 1-17"))
+
+    if int_user_input == 1:
+      try:
+        print(set_check())
+      except:
+        print("please enter the correct operation")
+    
+    elif int_user_input == 2:
+        try:
+           set1 = set_check()
+           print(" The add value is : " ,add_check(set1))
+        except:
+            print("please enter the valid operation")
+
+    elif int_user_input == 3:
+        try:
+          set1 = set_check()
+          print(" The remove value is : " ,remove_check(set1))
+        except:
+            print("please enter the valid operation")
+
+    elif int_user_input == 4:
+        try:
+            set1 = set_check()
+            print(" The length value is : " ,len_check(set1))
+
+        except:
+            print("please enter the valid operation")
+
+    elif int_user_input == 5:
+        try:
+            set1 = set_check()
+            print(clear_check(set1))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 6:
+        try:
+            set1 = set_check()
+            print(" The pop value is : " ,pop_check(set1))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 7:
+        try:
+            set1 = set_create()
+            set2 = set_create()
+            print("The update values are ", isdisjoint_creation(set1,set2))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 8:
+        try:
+          set1 = set_create()
+          set2 = set_create()
+          print("The diffrence between two sets ", difference_creation(set1,set2))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 9:
+        try:
+            set1 = set_create()
+            set2 = set_create()
+            print("The update values are ", update_creation(set1,set2))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 10:
+        try:
+            set1 = set_create()
+            set2 = set_create()
+            print("The set to search for equal items in : ", subset_creation(set1,set2))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 11:
+        try:
+            set1 = set_create()
+            set2 = set_create()
+            print("The set to search for equal items in : ", issuperset_creation(set1,set2))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 12:
+        try:
+           set1 = set_create()
+           set2 = set_create()
+           print("The other set to search for equal items in : ", intersection_creation(set1,set2))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 13:
+        try:
+            set1 = set_create()
+            set2 = set_create()
+            print("The other set to search for equal items in : ", symmetric_creation(set1,set2))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 14:
+        try:
+           set1 = set_create()
+           set2 = set_create()
+           print("The set to check for matches in : ", symmetricdiffrence_creation  (set1,set2))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 15:
+        try:
+           set1 = set_create()
+           set2 = set_create()
+           print("The iterable to unify with : ", union_creation  (set1,set2))
+        except:
+            print("enter the valid operation")
+        
+    elif int_user_input == 16:
+        try:
+            print(" The after conversion is : " ,set_conversion())
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 17:
+        try:
+            print(" The after conversion is : " ,set_list())
+        except:
+            print("enter the valid operation")
+    
+
+
+if user_input == 6:
+    print("""please select any one operation
+    1. dictionairy creation
+    2. add dictionairy
+    3. update function
+    4. pop function
+    5. get function
+    6. values function
+    7. key and values function
+    8. access function
+    9. copy function
+    
+    
+    """)
+
+    int_user_input = int(input("please select any one  nnumbe r 1-10"))
+
+
+    if int_user_input == 1:
+        try:
+            print(dict_creation())
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 2:
+        try:
+            dict1 = dict_creation()
+            print("The add values are : ", add_dict(dict1))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 3:
+        try:
+            dict1 = dict_creation()
+            print("The update values are : ", update_dict(dict1))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 4:
+        try:
+            dict1 = dict_creation()
+            print(" After remove values  are : ", pop_dict(dict1))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 5:
+        try:
+            dict1 = dict_creation()
+            print(" After get values  are : ", get_dict(dict1))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 6:
+        try:
+            dict1 = dict_creation()
+            print(" After len values  are : ", values_dict(dict1))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 7:
+        try:
+            dict1 = dict_creation()
+            dict2 = dict_creation()
+            print(" After key and  values  are : ", key_valuedict(dict1,dict2))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 8:
+        try:
+           dict1 = dict_creation()
+           print(" After access values  are : ", access_dict(dict1))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 9:
+        try:
+           dict1 = dict_creation()
+           print(" After copy values  are : ", copy_dict(dict1))
+        except:
+            print("enter the valid operation")
+
+    elif int_user_input == 10:
+        try:
+           list1 = list_check()
+           list2 = list_check()
+           list_dict(list1,list2)
+        except:
+            print("enter the valid operation")
+
+    
