@@ -4,7 +4,9 @@
 
 
  overvirew :
-            A calculator is a device that performs arithmetic operations on numbers. The simplest calculators can do only addition, subtraction, multiplication, and division. More sophisticated calculators can handle exponent ial operations, roots, logarithm s, trigonometric functions, and hyperbolic functions. Internally, some calculators actually perform all of these functions by repeated processes of addition operators are using in calculator. In this project i have develop the data structure calculator has more options like int,string,list,tuple,dictionairy,set perations.
+            A calculator is a device that performs arithmetic operations on numbers. The simplest calculators can do only addition, subtraction, multiplication, and division. 
+            
+            More sophisticated calculators can handle exponent ial operations, roots, logarithm s, trigonometric functions, and hyperbolic functions. Internally, some calculators actually perform all of these functions by repeated processes of addition operators are using in calculator. In this project i have develop the data structure calculator has more options like int,string,list,tuple,dictionairy,set perations.
  
             
 step 1 :
