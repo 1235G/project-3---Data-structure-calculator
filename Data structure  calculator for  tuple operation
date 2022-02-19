@@ -1,0 +1,32 @@
+# tuple creation
+def tuple_check():
+    value1 = int(input("enter the integer " ))
+    b = []
+    for i in range(0,value1):
+        temp = int(input())
+        b.append(temp)
+    return tuple(b)
+# count function
+def count_check(tuple1):
+    tuple_number = int(input("enter the count value : "))
+    tuple2 = tuple1.count(tuple_number)
+    return tuple2
+# index function
+def index_check(tuple1):
+    index_number = int(input("enter the index  value : "))
+    index2 = tuple1.index(index_number)
+    return index2
+# concatenate
+def concatenate(tuple1,tuple2):
+    tuple3 = tuple1 + tuple2
+    return tuple3
+
+#tuple conversion
+def tuple_conversion():
+    value1 = int(input("enter the integer " ))
+    b = list()
+    for i in range(value1):
+        temp = int(input())
+        b.append(temp)
+        c =  tuple(b)
+        return set(c)
