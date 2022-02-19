@@ -1,0 +1,83 @@
+# set conversion
+def set_create():
+    value1 = int(input("enter the integer " ))
+    b = set()
+    for i in range(0,value1):
+        temp = int(input())
+        b.add(temp)
+    return b
+# addition operation
+def add_check():
+    add_number = int(input("enter the add  value : "))
+    add2 = set1.add(add_number)
+    return add2
+# remove operation
+def setremove_check(set1):
+    remove_number = int(input("enter the reomove  value : "))
+    set1.remove(remove_number)
+    return set1
+
+# pop operation
+def pop_check(set1):
+    pop_number = int(input("enter the reomove  value : "))
+    set1.pop(remove_number)
+    return set1
+#len function
+def len_check(set1):
+    return len(set1)
+#clear function
+def clear_check(set1):
+    return set1.clear()
+# diffrence function
+def difference_creation(set1,set2):
+    set3 = set1.difference(set2)
+    return set3
+# update function
+def update_creation(set1,set2):
+    set4 = set1.update(set2)
+    return set4
+# is subset function
+def subset_creation(set1,set2):
+    set4 = set1.issubset(set2)
+    return set4
+# issuperset function
+def issuperset_creation(set1,set2):
+    set4 = set1.issuperset(set2)
+    return set4
+#intersection function
+def intersection_creation(set1,set2):
+    set4 = set1.intersection(set2)
+    return set4
+#symmetric function
+def symmetric_creation(set1,set2):
+    set4 = set1.symmetric_difference(set2)
+    return set4
+#symmetric_difference_update
+def symmetricdiffrence_creation(set1,set2):
+    set4 = set1.symmetric_difference_update(set2)
+    return set4
+#union function
+def union_creation(set1,set2):
+    set4 = set1.union(set2)
+    return set4
+#isdisjoint function
+def isdisjoint_creation(set1,set2):
+    set4 = set1.isdisjoint(set2)
+    return set4
+# set to tuple
+def set_conversion():
+    value1 = int(input("enter the integer " ))
+    b = set()
+    for i in range(0,value1):
+        temp = int(input())
+        b.add(temp)
+    return tuple(b)
+# set to list
+def set_list():
+    value1 = int(input("enter the integer " ))
+    b = set()
+    for i in range(0,value1):
+        temp = int(input())
+        b.add(temp)
+    return list(b)
+
