@@ -1,0 +1,120 @@
+ add function
+def add_function(value1, value2):
+    return value1 + value2
+
+
+
+#mutiply
+def multiply(value1, value2):
+    return value1 * value2
+
+
+#subraction
+def sub_function(value1, value2):
+    return value1 - value2
+
+
+#power calculation
+def pow_function(value1,value2):
+    return value1 ** value2
+
+
+# division calculation
+def div_calculation(value1,value2):
+    return value1 / value2
+
+
+# floor division
+def floor_calculation(value1,value2):
+    return value1 // value2
+
+
+# remainder calculation
+def rem_calculation(value1,value2):
+    return value1 % value2
+
+
+# palindrome check
+def palindrome_check(value1):
+    if value1 == value1[::-1]:
+        return("palindrome")
+    else:
+       return("not a palindrome")
+
+#value1 = input("Please enter string: ") 
+#palindrome_check(value1)
+    
+# positive or negative check
+def positive_check(value1):   
+    if value1 > 0:   
+        print("Number given by you is Positive")     
+    elif value1 < 0:   
+        print("Number given by you is Negative")   
+    else:   
+        print("Number given by you is zero")   
+#value1 = int(input("Enter a number as input value: "))    
+#positive_check(value1)  
+
+# odd or even
+def odd_check(value1):
+    if(value1 % 2) == 0:  
+         return("even number") 
+    else:  
+         return("Odd number")
+#value1 = int(input("enter the integer"))
+#odd_check(value1)
+
+# fibanocci series
+
+def Fibonacci_num(value1):
+    
+     u = 0
+     v = 1
+     if value1 < 0:
+           print("Incorrect input entered")
+     elif value1 == 0:
+           return u
+     elif value1 == 1:
+           return v
+     else:
+        for i in range(2,value1):
+            c = u + v
+            u = v
+            v = c   
+        return v
+
+#factorial 
+def factorial(value1):
+
+     if value1 == 0 or value1 == 1:
+        return 1
+
+     return value1 * factorial(value1-1) 
+
+# sum of digits
+
+def sum1_check(value1):
+    b = 0
+    while value1 > 0:
+        temp = value1 % 10
+        b = b + temp
+        value1 = value1 // 10
+        return(b) 
+#value1 = int(input("enter the integer : "))
+#sum_check(value1)
+
+# product of digits
+
+def product_check(value1):
+    b = 1
+    while value1 > 0:
+        b = b*(value1 % 10)
+        value1 = value1 // 10
+        print(b)
+
+# amstrong check:
+def amstrong_check(value1):
+    if int(str(value1)[0]) ** 3  + int(str(value1)[1]) ** 3 + int(str(value1)[2]) ** 3 == value1:
+        return("This is armstrong number")
+    else:
+        return("This is not armstrong number")
