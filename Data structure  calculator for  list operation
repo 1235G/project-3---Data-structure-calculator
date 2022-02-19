@@ -1,0 +1,106 @@
+ #list operation
+
+# list creation
+def list_check():
+    value1 = int(input("enter the integer " ))
+    b = []
+    for i in range(0,value1):
+        temp = int(input())
+        b.append(temp)
+    return b
+
+# length function 
+
+def len_check(list1):
+    return len(list1)
+
+# count function 
+def count_check(list1):
+    counting_number = int(input("enter the count value : "))
+    count2 = list1.count(counting_number)
+    return count2
+
+# sum function
+def sum_check(list1):
+   return sum(list1)
+
+# pop function
+def pop_check(list1):
+    pop_number = int(input(" enter the pop value : "))
+    list1.pop(pop_number)
+    return list1
+#median function
+def median_check(list1):
+    if len(list1) % 2 == 0:
+        c = ((list1[len(list1)//2] + list1[(len(list1)//2) - 1]) /  2)
+    return c
+#mean function
+def mean_check(list1):
+    if len(list1) % 2 == 0:
+        b = (list1[len(list1)//2])
+    print (b)
+#remove function
+def remove_check(list1):
+    remove_number = int(input(" enter the remove value : "))
+    list1.remove(remove_number)
+    return list1
+# insert function
+def insert_check(list1):
+    insert_number = int(input(" enter the insert value : "))
+    insert1_number = int(input(" enter the insert value1 : "))
+    list1.insert(insert_number ,insert1_number)
+    return list1
+
+# sort function
+def sort_check(list1):
+    list1.sort()
+    return list1
+# copy function
+def copy_check(list1):
+    return list1.copy()
+# reverse function
+def reverse_check(list1):
+    return list1.reverse()
+# odd or even
+def oddeven_check(list1):
+    if(list1%2==0):
+        print(num," Is an even")
+    else:
+        print(num," is an odd")
+def max_check(list1):
+    return max(list1)
+#def list compresion
+def list_conversion(list1):
+    value1 = int(input("enter the integer " ))
+    b = []
+    for i in range(0,value1):
+        temp = int(input())
+        b.append(temp)
+    return set(b)
+# shollow copy
+def shallow_copy(list1):
+    b = list1 
+    list1[1] = "python"
+    print(list1)
+    return(b)
+# concatenate
+def concatenate_values(list1,list2):
+    list3 = list1 + list2
+    return list3
+
+# max and min 
+def max_check(list1,list2):
+   b =  max(list1)
+   c = min(list2)
+   return b + c
+
+# duplicate removal:
+def duplicate_removal(list1):
+    value1 = int(input("enter the integer " ))
+    b = []
+    for i in range(0,value1):
+        temp = int(input())
+        b.append(temp)
+        c = set(b)
+        d = tuple(c)
+        return d
