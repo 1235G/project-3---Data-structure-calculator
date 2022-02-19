@@ -1,0 +1,55 @@
+
+                # dictionairy creation
+
+#dictionairy creation
+def dict_creation():
+    value1 = int(input("enter the integer " ))
+    dictionairy = {}
+    for i in range(0,value1):
+        key = int(input())
+        value = int(input())
+        dictionairy[key] = value
+    return(dictionairy)
+#add dictionairy
+def add_dict(dict1):
+    addkey =int(input("enter the add key : "))
+    addvalue = int(input("enter the add value : "))
+    dict1[addkey] = addvalue
+    return dict1
+#update dictionairy
+def update_dict(dict1):
+    updatekey = int(input("enter the update key : "))
+    updatevalue = input("enter the update value : ")
+    dict1.update({updatekey : updatevalue})
+    return dict1
+# remove function
+def pop_dict(dict1):
+    popkey = int(input("enter the update key : "))
+    dict1.pop(popkey)
+    return dict1
+# get function
+def get_dict(dict1):
+    getkey = int(input("enter the update key : "))
+    dict1.get(getkey)
+    return dict1
+# values function
+def values_dict(dict1):
+    dict1.values()
+    return dict1
+# length function
+def len_dict(dict1):
+    return len(dict1)
+# key and value function
+def key_valuedict(dict1,dict2):
+    dict1.keys()
+    dict2.values()
+    return dict1,dict2
+#acess function
+def access_dict(dict1):
+    copykey = int(input("enter the update key : "))
+    x = dict1[copykey]
+    return x
+# copy function
+def copy_dict(dict1):
+    copyfunction  = dict1.copy()
+    return copyfunction
