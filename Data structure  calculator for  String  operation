@@ -1,0 +1,72 @@
+# string operations
+
+# string concadination
+def concanate_check(value1,value2):
+    return value1 + value2
+
+# palindrome check
+def palin_check(value1):
+    if value1 == value1[::-1]:
+        print("palindrome")
+    else:
+       print("not a palindrome")
+#value1 = input("Please enter string: ") 
+#palin_check(value1)
+
+# length function
+
+def length_check(value1):
+    return len(value1)
+
+# capitalize function
+def capital_check(value1):
+    return value1.capitalize()
+
+# lower function
+def lower_check(value1):
+    return value1.lower()
+
+# title function
+def title_check(value1):
+    return value1.istitle()
+
+# startswith function
+def star_check(value1):
+    function = input("enter the string ")
+    function2 = value1.startswith(function)
+    return function2
+# endswith function
+def end_check(value1):
+    function = input("enter the string ")
+    function1 = value1.endswith(function)
+    return function1
+
+# replace function
+def replace_check(value1):
+    replace2 = input("enter the replace value ")
+    replace3 = input("enter the replace value ")
+    replace1 = value1.replace(replace2,replace3)
+    return replace1 
+
+# numeric function
+def numberic_check(value1):
+    return value1.isnumeric()
+
+# index function
+def index_check(value1):
+    return value1.index(1)
+
+# split function
+def split_check(value1):
+    return value1.split()
+
+# find function
+def find_check(value1):
+    return value1.find()
+
+# strip function
+
+def strip_check(value1):
+    stripvalue = input("enter the strip value ")
+    value1.strip(stripvalue)
+    return value1
