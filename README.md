@@ -10,6 +10,14 @@
             
 step 1 :
          integer contains 15 operations,string contains 15 operations , tuple contain 10 operations,set contain 10 operations ,dictionairy contain 10 opeartions.code write for each operations.
+         step1: int operation
+         ![Screenshot 2022-03-18 110007](https://user-images.githubusercontent.com/88941914/158945732-e2406860-6363-433e-90e9-a785ebfa31f2.png)
+         step 2: set operation
+         step 3: string operation
+         step 4 : tuple operation
+         step5: dictionairy operation
+         step6: list operation
+        
  
 step 2 :
        perform error handling has been use in the program like try and except. eg. in int operation user give wrong input try and except concept will work.
