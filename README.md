@@ -30,10 +30,25 @@ step 1 :
         
  
 step 2 :
-       perform error handling has been use in the program like try and except. eg. in int operation user give wrong input try and except concept will work.
+       using librairy modules can use to short the lines of code.
+       ![Screenshot 2022-03-18 141004 (2)](https://user-images.githubusercontent.com/88941914/158966716-f3e7194a-69a6-40bb-87a3-deae8542fe79.png)
+
        
 step 3 :
        program using while loop.eg condition ask user is quit or continue quit means outside the loop it will come.
+       ![Screenshot 2022-03-18 141805](https://user-images.githubusercontent.com/88941914/158967292-39a663d3-4a4c-4790-899b-fd1fc100594f.png)
+       ![Screenshot 2022-03-18 141822](https://user-images.githubusercontent.com/88941914/158967375-53745bb8-4712-4c48-8a4a-e2cc2da3b98b.png)
+       ![Screenshot 2022-03-18 141744](https://user-images.githubusercontent.com/88941914/158967407-d3ea00df-3752-4038-8c74-7023c74b8c70.png)
+       
        
 step 4 :
-       using librairy modules can use to short the lines of code.
+       perform error handling has been use in the program like try and except. eg. in int operation user give wrong input try and except concept will work..
+       ![Screenshot 2022-03-18 141822](https://user-images.githubusercontent.com/88941914/158967375-53745bb8-4712-4c48-8a4a-e2cc2da3b98b.png)
+       ![Screenshot 2022-03-18 141744](https://user-images.githubusercontent.com/88941914/158967407-d3ea00df-3752-4038-8c74-7023c74b8c70.png)
+step5:
+     output of this operation.
+     ![Screenshot 2022-03-18 142402](https://user-images.githubusercontent.com/88941914/158970356-19e7bc9a-27b9-476a-9561-32dbd6156239.png)
+     ![Screenshot 2022-03-18 142426](https://user-images.githubusercontent.com/88941914/158970392-a3568342-cafe-4f77-9235-3d37c643594d.png)
+     ![Screenshot 2022-03-18 142343](https://user-images.githubusercontent.com/88941914/158970413-0bcf22e3-31ec-4cbf-bd5f-81379002d933.png)
+     
+       
