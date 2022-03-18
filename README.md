@@ -47,8 +47,14 @@ step 4 :
        ![Screenshot 2022-03-18 141744](https://user-images.githubusercontent.com/88941914/158967407-d3ea00df-3752-4038-8c74-7023c74b8c70.png)
 step5:
      output of this operation.
+     step1:
+     welcome to calculator select the operation
      ![Screenshot 2022-03-18 142402](https://user-images.githubusercontent.com/88941914/158970356-19e7bc9a-27b9-476a-9561-32dbd6156239.png)
+     step2:
+     please the the operation
      ![Screenshot 2022-03-18 142426](https://user-images.githubusercontent.com/88941914/158970392-a3568342-cafe-4f77-9235-3d37c643594d.png)
+     step3:
+     select the operation enter the input means this will give output
      ![Screenshot 2022-03-18 142343](https://user-images.githubusercontent.com/88941914/158970413-0bcf22e3-31ec-4cbf-bd5f-81379002d933.png)
      
        
